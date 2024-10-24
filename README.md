@@ -54,7 +54,11 @@ A web application that allows users to generate and download barcodes and QR cod
 ## Demo
  [Live Demo](https://itsvee0120.github.io/Barcode_QRcode_Generator/)
 
-![Demo](path/to/demo/image.png)
+
+
+https://github.com/user-attachments/assets/658b6b65-525d-4f85-b9a2-67a7e50e440e
+
+
 
 ## Contributing
 
