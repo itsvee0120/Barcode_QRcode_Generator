@@ -6,7 +6,7 @@
 }
 
 body {
-  background: rgb(75, 48, 75);
+  background-image: url(res/image/background3.png);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,7 +190,7 @@ footer img {
 
 footer a {
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   margin-top: 15px;
 }
 
