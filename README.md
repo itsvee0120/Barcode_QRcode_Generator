@@ -22,8 +22,7 @@ A web application that allows users to generate and download barcodes and QR cod
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/itsvee0120/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/itsvee0120/Barcode_QRcode_Generator
    ```
 
 2. **Open `index.html` in your browser.**
@@ -53,6 +52,7 @@ A web application that allows users to generate and download barcodes and QR cod
 - Font Awesome for icons
 
 ## Demo
+ [Live Demo](https://itsvee0120.github.io/Barcode_QRcode_Generator/)
 
 ![Demo](path/to/demo/image.png)
 
