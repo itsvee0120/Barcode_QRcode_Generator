@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(75, 48, 75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 150px; /* Leave space for the fixed header */
+}
+
+/* Fix header to stay on top */
+header {
+  position: fixed;
+  top: 20px; /* Moves the header down 20px from the top */
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border: 1px solid rgba(234, 191, 234, 0.8);
+  border-radius: 1rem;
+  padding: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgb(92, 71, 88);
+  text-align: center;
+}
+
+h1 {
+  color: rgba(234, 191, 234);
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+/* Center container using flexbox */
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 25px 35px;
+  background: rgba(234, 191, 234, 0.8);
+  border-radius: 10px;
+  margin: 50px auto; /* Center it horizontally */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container p {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(57, 16, 38);
+}
+
+.container input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(99, 15, 102);
+  outline: 0;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .button-group {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap when there's not enough space */
+  justify-content: space-between;
+}
+
+.container .button-group button {
+  flex: 1 1 calc(33.33% - 10px); /* Adjusted button width for grid display */
+  margin: 5px; /* Added margin for spacing between buttons */
+}
+
+.container button {
+  font-size: 16px;
+  height: 50px;
+  background: rgb(176, 133, 176);
+  color: rgb(71, 30, 109);
+  border: 2px solid rgb(93, 42, 59);
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.container button:hover {
+  transform: scale(1.05);
+}
+
+.imgBox {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 10px auto;
+  border: 1px solid rgb(122, 36, 141);
+  overflow: hidden;
+}
+
+.imgBox img {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 10px;
+}
+
+/* Class to show the image box */
+.show-img {
+  display: flex;
+}
+
+.show-img {
+  max-height: 100%;
+  margin: 10px auto;
+  border: 1px solid rgb(122, 36, 141);
+}
+
+.error {
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    max-width: none;
+  }
+
+  .container .button-group button {
+    flex: 1 1 calc(50% - 10px); /* Adjusted button width for grid display */
+  }
+}
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+}
+
+footer img,
+footer a {
+  text-align: center;
+}
+footer img {
+  max-width: 25%;
+  max-height: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  margin-top: 15px;
+}
+
+footer a:hover {
+  font-weight: bold; /* Bold on hover */
+  color: rgb(210, 2, 123); /* Color change on hover */
+}
+/* Make it responsive */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  footer a {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer img {
+    max-width: 50%;
+  }
+}
