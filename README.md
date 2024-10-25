@@ -1,7 +1,6 @@
-
 # Simple Barcode/QR Code Generator
 
-A web application that allows users to generate and download barcodes and QR codes from any input data or URL. This project uses APIs for barcode and QR code generation, along with HTML, CSS, and JavaScript to create an interactive user interface.
+A responsive web application that allows users to generate and download barcodes and QR codes from any input data or URL. This project uses APIs for barcode and QR code generation, along with HTML, CSS, and JavaScript to create an interactive user interface.
 
 ## Features
 
@@ -36,11 +35,12 @@ A web application that allows users to generate and download barcodes and QR cod
 
 ### APIs Used
 
-- **Barcode Generation**: 
-  - **API**: [OrcaScan API](https://barcode.orcascan.com)
+- **Barcode Generation**:
+
+  - **API**: [Barcode API](https://barcodeapi.org/api.html)
   - **Description**: This API generates barcode images in various formats. The application uses the Code 128 format for barcodes, allowing you to encode a wide range of data.
 
-- **QR Code Generation**: 
+- **QR Code Generation**:
   - **API**: [QRServer API](https://goqr.me/api/)
   - **Description**: This API generates QR code images based on the provided data. It supports different sizes and can encode URLs, text, or any other information.
 
@@ -52,13 +52,10 @@ A web application that allows users to generate and download barcodes and QR cod
 - Font Awesome for icons
 
 ## Demo
- [Live Demo](https://itsvee0120.github.io/Barcode_QRcode_Generator/)
 
-
+[Live Demo](https://itsvee0120.github.io/Barcode_QRcode_Generator/)
 
 https://github.com/user-attachments/assets/658b6b65-525d-4f85-b9a2-67a7e50e440e
-
-
 
 ## Contributing
 
@@ -72,4 +69,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Made with ❤️ by [Violet Nguyen](https://linkedin.com/in/violetnguyen0120/)  
 GitHub: [itsvee0120](https://github.com/itsvee0120)
-
