@@ -70,9 +70,10 @@
       function generateBarcode() {
         if (barcodeText.value.length > 0) {
           let inputData = barcodeText.value;
-          let barcodeApiUrl = `https://barcode.orcascan.com/?type=code128&data=${encodeURIComponent(
+          let barcodeApiUrl = `https://barcodeapi.org/api/128/${encodeURIComponent(
             inputData
-          )}&text=${encodeURIComponent(inputData)}&format=png`;
+          )}`;
+
           barcodeImg.src = barcodeApiUrl;
           qrCodeImg.src = ""; // Clear QR code
           imgBox.style.display = "flex"; // Show the image box
