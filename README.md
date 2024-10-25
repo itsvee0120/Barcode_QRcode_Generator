@@ -55,7 +55,21 @@ A responsive web application that allows users to generate and download barcodes
 
 [Live Demo](https://itsvee0120.github.io/Barcode_QRcode_Generator/)
 
-https://github.com/user-attachments/assets/658b6b65-525d-4f85-b9a2-67a7e50e440e
+**Responsive layout on web**
+
+https://github.com/user-attachments/assets/0b9fa29e-f4c9-4a0d-9889-15c9551601ca
+
+
+**Responsive layout on mobile phone**
+
+
+
+
+https://github.com/user-attachments/assets/317aabc7-99e5-4183-af44-d1aebb4ee1dd
+
+
+
+
 
 ## Contributing
 
